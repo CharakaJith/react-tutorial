@@ -16,12 +16,58 @@ import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
 import StyleSheet from './components/StyleSheet';
 import InLine from './components/InLine';
+import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+import Input from './components/Input';
+import FocusInput from './components/FocusInput';
+import FRInput from './components/FRInput';
+import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundry from './components/ErrorBoundry';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="error">Error</h1>
-      <h1 className={styles.success}>Success</h1>
+      <ErrorBoundry>
+        <Hero name="Charaka" />
+      </ErrorBoundry>
+      <ErrorBoundry>
+        <Hero name="Jith" />
+      </ErrorBoundry>
+      <ErrorBoundry>
+        <Hero name="CJ" />
+      </ErrorBoundry>
+
+      {/* <PortalDemo /> */}
+
+      {/* <FRParentInput /> */}
+
+      {/* <FocusInput /> */}
+
+      {/* <Input /> */}
+
+      {/* <RefsDemo /> */}
+
+      {/* <ParentComp /> */}
+
+      {/* <PureComp /> */}
+
+      {/* <Table /> */}
+
+      {/* <FragmentDemo /> */}
+
+      {/* <LifecycleA /> */}
+
+      {/* <Form /> */}
+
+      {/* <h1 className="error">Error</h1>
+      <h1 className={styles.success}>Success</h1> */}
 
       {/* <InLine /> */}
 
